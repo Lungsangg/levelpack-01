@@ -17,11 +17,11 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly',
           'https://www.googleapis.com/auth/drive.file',
           'https://www.googleapis.com/auth/drive']
-CLIENT_SECRET_FILE = 'client_secretss.json'
-APPLICATION_NAME = 'levelpack-UI'
+CLIENT_SECRET_FILE = 'client_secrets.json'
+APPLICATION_NAME = 'levelpacktest01'
 
 # Declare full path to folder and folder name
-FULL_PATH = r'/home/ubuntu/levelpack-UI/content'
+FULL_PATH = r'/home/lungsang/Desktop/levelpack-UI/content'
 DIR_NAME = 'content'
 
 GOOGLE_MIME_TYPES = {
@@ -119,11 +119,11 @@ def get_credentials():
         Credentials, the obtained credential.
     """
     home_dir = os.path.expanduser('~')
-    credential_dir = os.path.join(home_dir, 'levelpack-UI')
+    credential_dir = os.path.join(home_dir, 'levelpack-test')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'credentials.json')
+                                   'credentialsss.json')
 
     store = Storage(credential_path)
     credentials = store.get()
