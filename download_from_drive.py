@@ -27,10 +27,10 @@ SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly',
           'https://www.googleapis.com/auth/drive.file',
           'https://www.googleapis.com/auth/drive']
 CLIENT_SECRET_FILE = 'client_secrets.json'
-APPLICATION_NAME = 'levelpacktest01'
+APPLICATION_NAME = 'levelpack'
 
 # Declare full path to folder and folder name
-FULL_PATH = r'/home/lungsang/Desktop/levelpack-UI/content'
+FULL_PATH = r'/home/ubuntu/levelpack-test/content'
 DIR_NAME = 'content'
 # Or simply
 # DIR_NAME = FULL_PATH.split('/')[-1]
@@ -54,19 +54,6 @@ GOOGLE_MIME_TYPES = {
 }
 
 
-# 'application/vnd.google-apps.drawing': 'application/x-msmetafile'
-# 'application/vnd.google-apps.folder': '',
-# 'application/vnd.google-apps.form': 'application/pdf',
-# 'application/vnd.google-apps.fusiontable': '',
-# 'application/vnd.google-apps.map': 'application/pdf',
-# 'application/vnd.google-apps.photo': 'image/jpeg',
-# 'application/vnd.google-apps.file': '',
-# 'application/vnd.google-apps.sites': '',
-# 'application/vnd.google-apps.unknown': '',
-# 'application/vnd.google-apps.video': '',
-# 'application/vnd.google-apps.audio': '',
-# 'application/vnd.google-apps.drive-sdk': ''
-# 'application/octet-stream': 'text/plain'
 
 def folder_upload(service):
     '''Uploads folder and all it's content (if it doesnt exists)
@@ -156,7 +143,7 @@ def get_credentials():
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'credentialsss.json')
+                                   'credentialsw.json')
 
     store = Storage(credential_path)
     credentials = store.get()

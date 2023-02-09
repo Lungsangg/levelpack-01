@@ -18,10 +18,10 @@ SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly',
           'https://www.googleapis.com/auth/drive.file',
           'https://www.googleapis.com/auth/drive']
 CLIENT_SECRET_FILE = 'client_secrets.json'
-APPLICATION_NAME = 'levelpacktest01'
+APPLICATION_NAME = 'levelpack'
 
 # Declare full path to folder and folder name
-FULL_PATH = r'/home/lungsang/Desktop/levelpack-UI/content'
+FULL_PATH = r'/home/ubuntu/levelpack-test/content'
 DIR_NAME = 'content'
 
 GOOGLE_MIME_TYPES = {
@@ -123,7 +123,7 @@ def get_credentials():
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'credentialsss.json')
+                                   'credentialsw.json')
 
     store = Storage(credential_path)
     credentials = store.get()
