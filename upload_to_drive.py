@@ -21,7 +21,7 @@ CLIENT_SECRET_FILE = 'client_secrets.json'
 APPLICATION_NAME = 'levelpack'
 
 # Declare full path to folder and folder name
-FULL_PATH = r'/home/ubuntu/levelpack-test/content'
+FULL_PATH = r'/home/wangmo/levelpack-test/content'
 DIR_NAME = 'content'
 
 GOOGLE_MIME_TYPES = {
@@ -123,7 +123,7 @@ def get_credentials():
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'credentialssss.json')
+                                   'credentials.json')
 
     store = Storage(credential_path)
     credentials = store.get()
