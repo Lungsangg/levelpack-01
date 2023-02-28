@@ -1,14 +1,14 @@
 import streamlit as st
-from upload_to_drive import main as u
-from download_from_drive import main as d
+from upload_to_drive import main as upload_sync
+from download_from_drive import main as download_sync
 
 
 def upload():
-    u()
+    upload_sync()
 
 
 def download():
-    d()
+    download_sync()
 
 
 if __name__ == "__main__":
@@ -19,6 +19,3 @@ if __name__ == "__main__":
 
     with col2:
         st.button('download from gdrive', on_click=download)
-
-
-
